@@ -1,0 +1,162 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #db3495;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.groceryBody {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+}
+
+.groceryContainer {
+    width: 100%;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    background: transparent;
+    overflow: hidden;
+}
+
+.groceryContainer h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(230, 51, 191);
+    border-bottom: 1px solid rgb(95, 92, 92, 0.5);
+    text-shadow: 1px 1px 1px #ce19c5;
+}
+
+.groceryContainer .search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.groceryContainer .search input {
+    width: 80%;
+    height: 70px;
+    border: none;
+    padding-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    box-shadow: rgb(175, 31, 115) 0px 0px 5px 1px;
+}
+
+.groceryContainer .search input::placeholder {
+    text-align: center;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.groceryContainer .search input:focus {
+    outline: none;
+}
+
+.groceryContainer .groceryBoxes {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    /* Space cards evenly */
+    gap: 5px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    /* Optional: restrict the max width of the container */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.groceryContainer .groceryBoxes .mainBox {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Ensure the cards take up a proportional amount of space */
+    flex: 1 1 250px;
+    /* Flex-grow, flex-shrink, flex-basis */
+    box-sizing: border-box;
+    /* Prevents overflow */
+}
+
+.mainBox .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    border: 0.5px solid rgb(243, 238, 238);
+}
+
+.card .productImage img {
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card .title p {
+    color: rgb(230, 51, 191);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.card .description p {
+    margin: 5px;
+    padding: 0;
+}
+
+.card .addbtn {
+    margin: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    border: 0.5px solid rgb(221, 194, 194);
+    padding: 5px;
+}
+
+.card .addbtn button {
+    cursor: pointer;
+    width: 43px;
+    height: 32px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    background-color: #fa4fad;
+    padding: 5px;
+}
