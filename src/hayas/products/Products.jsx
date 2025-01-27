@@ -1,5 +1,5 @@
-import grocery from '../imagesAndVideos/grocery.png'
-import food from '../imagesAndVideos/food.png'
+import grocery from './images/grocery.png'
+import food from './images/food.png'
 import { Link } from 'react-router-dom'
 import './products.css'
 

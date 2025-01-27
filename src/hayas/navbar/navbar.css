@@ -29,9 +29,6 @@
 
 
 .navContainer img {
-    position: absolute;
-    left: 10%;
-    top: 10px;
     width: 100px;
     cursor: pointer;
 }
@@ -83,13 +80,22 @@
 }
 
 @media screen and (max-width: 1131px) {
+    .navContainer .ulOne {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navContainer .ulOne img {
+        padding: 5px;
+    }
+
     .navContainer .ulOne .hamburger {
         display: flex;
         flex-direction: column;
         gap: 4px;
-        position: absolute;
-        right: 15px;
-        top: 30px;
+        padding-top: 25px;
+        padding-right: 10px;
         cursor: pointer;
     }
 
@@ -101,11 +107,6 @@
         cursor: pointer;
     }
 
-    .navContainer .ulOne img {
-        position: absolute;
-        left: 20px;
-        top: 15px;
-    }
 
     .navContainer .ulTwo li {
         cursor: pointer;

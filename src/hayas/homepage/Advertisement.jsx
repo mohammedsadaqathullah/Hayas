@@ -7,7 +7,7 @@ import imgOne from './imagesAndVideos/shawarmaOffer.jpg'
 import imgTwo from './imagesAndVideos/aasifeOffer.jpg'
 import bike from './imagesAndVideos/bike.png'
 import './advertisement.css';
-import Products from './products/products';
+import Products from '../products/Products';
 
 const Advertisement = () => {
     const [isPlaying, setIsPlaying] = useState(false);
