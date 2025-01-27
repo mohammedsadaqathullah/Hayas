@@ -12,11 +12,12 @@
 .navContainer ul {
     list-style: none;
     margin: 0;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
     text-wrap: nowrap;
     color: rgb(250, 94, 146);
-    font-family: cursive;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 1px;
 
 }
 
@@ -110,6 +111,7 @@
 
     .navContainer .ulTwo li {
         cursor: pointer;
+        font-size: 18px;
     }
 
     .navContainer .ulTwo li button {

@@ -4,9 +4,9 @@
     justify-content: center;
     gap: 20px;
     text-align: center;
-    font-family: cursive;
-    font-size: 18px;
-    font-weight: 600;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 1px;
+    font-size: 22px;
     color: white;
 
 }

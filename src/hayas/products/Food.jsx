@@ -53,7 +53,7 @@ const Food = () => {
                                             <button> - </button>
                                         </span>
                                         <span>
-                                            <span>{product.halfKg}</span>Rs/500gm
+                                            <span>{product.halfKg}</span>Rs / 500gm
                                         </span>
                                         <span>
                                             <button> + </button>
@@ -64,7 +64,7 @@ const Food = () => {
                                             <button> - </button>
                                         </span>
                                         <span>
-                                            <span>{product.oneKg}</span>Rs/1kg
+                                            <span>{product.oneKg}</span>Rs / 1kg
                                         </span>
                                         <span>
                                             <button> + </button>
