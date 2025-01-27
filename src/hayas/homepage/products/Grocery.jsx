@@ -8,7 +8,7 @@ const Grocery = () => {
 
     useEffect(() => {
         // Fetch all products from backend
-        fetch('https://hayas-backend.onrender.com/products')
+        fetch('https://hayas-backend.onrender.com/grocery')
             .then((response) => response.json())
             .then((data) => {
                 setProducts(data);

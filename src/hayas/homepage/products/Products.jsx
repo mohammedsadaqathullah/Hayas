@@ -1,7 +1,7 @@
 import grocery from '../imagesAndVideos/grocery.png'
 import food from '../imagesAndVideos/food.png'
-import './products.css'
 import { Link } from 'react-router-dom'
+import './products.css'
 
 const Products = () => {
     return (
